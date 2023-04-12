@@ -4,5 +4,7 @@
     <string name="begin">Begin</string>
     <string name="amount">Amount:</string>
     <string name="field_prompt_text">The amount you want to convert…</string>
+    <string name="title_activity_exchange">Exchange</string>
+    <string name="convert">Convert</string>
 
 </resources>
