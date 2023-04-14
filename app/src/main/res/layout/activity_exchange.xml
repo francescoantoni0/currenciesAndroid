@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -45,10 +46,10 @@
                 android:paddingStart="0sp"
                 android:paddingEnd="5sp"
                 android:text="@string/amount"
-                android:textSize="16sp" />
+                android:textSize="18sp" />
 
             <EditText
-                android:id="@+id/editTextNumberDecimal"
+                android:id="@+id/edit_text_number_decimal"
                 android:layout_width="0dp"
                 android:maxWidth="488dp"
                 android:layout_height="48dp"
@@ -56,7 +57,7 @@
                 android:hint="@string/field_prompt_text"
                 android:ems="10"
                 android:inputType="numberDecimal"
-                />
+                android:autofillHints="" />
         </LinearLayout>
 
         <LinearLayout
@@ -75,12 +76,20 @@
                 android:paddingRight="10dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/convert_button"
                 android:layout_width="100dp"
                 android:layout_height="48dp"
                 android:text="@string/convert" />
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/result_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/converted_amount"
+            android:textSize="20sp"
+            android:visibility="visible"
+            tools:visibility="visible"/>
 
     </LinearLayout>
 
